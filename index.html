@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lux Whiteboard - Real-Time Collaboration</title>
+  <meta name="description"
+    content="A digital command center for healthcare. Synchronize your team's workflow instantly with Lux Whiteboard.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="../PRINCIPAL/assets/logoLuzPng.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="background-animated">
+    <div class="gradient-sphere sphere-1"></div>
+    <div class="gradient-sphere sphere-2"></div>
+    <div class="gradient-sphere sphere-3"></div>
+  </div>
+
+  <header class="header">
+    <div class="logo-container">
+      <a href="../PRINCIPAL/index.html" class="back-link">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M19 12H5M12 19l-7-7 7-7" />
+        </svg>
+        Back to Portal
+      </a>
+    </div>
+    <nav class="nav">
+      <span class="product-tag">Lux Whiteboard</span>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Collaborate in <br><span class="highlight">Real-Time</span> with Precision.</h1>
+        <p class="hero-subtitle">
+          A modern, glassmorphism-designed whiteboard that synchronizes your team's workflow instantly.
+          Replace cluttered physical boards with a smart, persistent digital layout.
+        </p>
+        <div class="cta-container">
+          <a href="#features" class="btn btn-primary">Explore Features</a>
+          <a href="#tech" class="btn btn-secondary">Tech Stack</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="glass-card hero-card">
+          <div class="card-header">
+            <span class="status-dot online"></span>
+            <h3>Live Dashboard</h3>
+          </div>
+          <div class="card-body">
+            <div class="mock-task">
+              <span class="task-badge urgent">Hospital</span>
+              <span class="task-text">Patient Admission - Room 302</span>
+            </div>
+            <div class="mock-task">
+              <span class="task-badge success">Done</span>
+              <span class="task-text">Staff Check-in Completed</span>
+            </div>
+            <div class="mock-task">
+              <span class="task-badge warning">To Do</span>
+              <span class="task-text">Review Night Shift Logs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section id="features" class="features">
+      <h2 class="section-title">Operational Clarity</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="icon-box">⚡</div>
+          <h3>Real-Time Sync</h3>
+          <p>Auto-refresh every 5 seconds ensures everyone sees the same data instantly. No manual page reloads
+            required.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon-box">🛡️</div>
+          <h3>Secure Access</h3>
+          <p>Robust JWT authentication with domain-locked registration to ensure data privacy and secure team access.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="icon-box">📊</div>
+          <h3>Smart Grouping</h3>
+          <p>Intuitively organize tasks into "To Do", "Done", "Hospital", and "Introduction" groups for clarity.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon-box">👤</div>
+          <h3>Status Indicators</h3>
+          <p>Visual cues for staff availability (Available, Busy, Lunch) visible to all colleagues in the sidebar.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Architecture -->
+    <section id="tech" class="architecture">
+      <div class="arch-content">
+        <h2 class="section-title">Split Architecture</h2>
+        <p class="arch-desc">Built for reliability and speed, separating the visual experience from the logic core.</p>
+
+        <div class="arch-grid">
+          <div class="arch-item">
+            <span class="arch-label">Frontend</span>
+            <h3>GitHub Pages</h3>
+            <p>Static, fast, and always available.</p>
+          </div>
+          <div class="arch-divider">
+            <div class="connection-line"></div>
+          </div>
+          <div class="arch-item">
+            <span class="arch-label">Backend</span>
+            <h3>Railway API</h3>
+            <p>Node.js & Express business logic.</p>
+          </div>
+          <div class="arch-divider">
+            <div class="connection-line"></div>
+          </div>
+          <div class="arch-item">
+            <span class="arch-label">Database</span>
+            <h3>MySQL</h3>
+            <p>Secure robust data storage.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 Lux Solutions. Empowering Healthcare.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
