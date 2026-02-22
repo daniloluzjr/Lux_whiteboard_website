@@ -471,6 +471,137 @@ body {
   color: rgba(255, 255, 255, 0.4);
 }
 
+/* Comparison Section */
+.comparison {
+  padding: 80px 24px;
+  position: relative;
+}
+
+.comparison-container {
+  display: flex;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  align-items: stretch;
+}
+
+.comparison-side {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: 24px;
+  padding: 40px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.comparison-side:hover {
+  background: rgba(255, 255, 255, 0.06);
+  transform: translateY(-5px);
+}
+
+.traditional {
+  border-left: 4px solid rgba(255, 255, 255, 0.2);
+}
+
+.smart {
+  border-left: 4px solid var(--primary-blue);
+  box-shadow: 0 0 30px rgba(0, 123, 255, 0.1);
+}
+
+.side-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.icon-circle {
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.smart .icon-circle {
+  background: rgba(0, 123, 255, 0.2);
+  color: #fff;
+}
+
+.side-header h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.comparison-list {
+  list-style: none;
+}
+
+.comparison-list li {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.list-icon {
+  font-size: 1.25rem;
+  opacity: 0.8;
+}
+
+.comparison-list strong {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 4px;
+  color: #fff;
+}
+
+.comparison-list p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.4;
+}
+
+.vs-divider {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background: #0f172a;
+  border: 1px solid var(--glass-border);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  color: var(--accent-color);
+  z-index: 10;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 850px) {
+  .comparison-container {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .vs-divider {
+    top: 50%;
+    margin-top: -30px;
+    /* Offset for spacing */
+  }
+
+  .comparison-side {
+    padding: 30px;
+  }
+}
+
 /* Response */
 @media (max-width: 968px) {
   .hero {
